@@ -1,0 +1,296 @@
+------------------------------------------------------------------------------------------------------------------------
+THREE ADDRESS CODE (TAC):
+------------------------------------------------------------------------------------------------------------------------
+0   :    t0 = 0
+1   :    glbl_idx = t0
+2   :    t1 = 100
+3   :    MAX_ARR_SIZE = t1
+
+4   : printStr: 
+5   : function printStr ends
+
+6   : printInt: 
+7   : function printInt ends
+
+8   : readInt: 
+9   : function readInt ends
+
+10  : binarySearch: 
+11  :    t2 = 1
+12  :    if left <= right goto 16
+13  :    t2 = 0
+14  :    goto 52
+15  :    goto 52
+16  :    t3 = left + right
+17  :    t4 = 2
+18  :    t5 = t3 / t4
+19  :    mid = t5
+20  :    t6 = 0
+21  :    t7 = mid
+22  :    t7 = t7 * 4
+23  :    t6 = t7
+24  :    t8 = int_arr[t6]
+25  :    t9 = 1
+26  :    if t8 == key goto 30
+27  :    t9 = 0
+28  :    goto 32
+29  :    goto 51
+30  :    return mid
+31  :    goto 11
+32  :    t10 = 0
+33  :    t11 = mid
+34  :    t11 = t11 * 4
+35  :    t10 = t11
+36  :    t12 = int_arr[t10]
+37  :    t13 = 1
+38  :    if t12 < key goto 42
+39  :    t13 = 0
+40  :    goto 46
+41  :    goto 50
+42  :    t14 = 1
+43  :    t15 = mid + t14
+44  :    left = t15
+45  :    goto 11
+46  :    t16 = 1
+47  :    t17 = mid - t16
+48  :    right = t17
+49  :    goto 11
+50  :    goto 11
+51  :    goto 11
+52  :    t18 = 1
+53  :    t19 = -t18
+54  :    return t19
+55  : function binarySearch ends
+
+56  : main: 
+57  :    t20 = 2
+58  :    glbl_idx = t20
+59  :    t21 = 15
+60  :    param .LC0
+61  :    t22 = call printStr, 1
+62  :    t23 = 0
+63  :    i = t23
+64  :    t24 = 15
+65  :    t25 = 1
+66  :    if i < t24 goto 73
+67  :    t25 = 0
+68  :    goto 82
+69  :    goto 82
+70  :    t26 = i
+71  :    i = i + 1
+72  :    goto 64
+73  :    t27 = 0
+74  :    t28 = i
+75  :    t28 = t28 * 4
+76  :    t27 = t28
+77  :    t29 = &err
+78  :    param t29
+79  :    t30 = call readInt, 1
+80  :    arr_1[t27] = t30
+81  :    goto 70
+82  :    param .LC1
+83  :    t31 = call printStr, 1
+84  :    t32 = 0
+85  :    i = t32
+86  :    t33 = 15
+87  :    t34 = 1
+88  :    if i < t33 goto 95
+89  :    t34 = 0
+90  :    goto 105
+91  :    goto 105
+92  :    t35 = i
+93  :    i = i + 1
+94  :    goto 86
+95  :    t36 = 0
+96  :    t37 = i
+97  :    t37 = t37 * 4
+98  :    t36 = t37
+99  :    t38 = arr_1[t36]
+100 :    param t38
+101 :    t39 = call printInt, 1
+102 :    param .LC2
+103 :    t40 = call printStr, 1
+104 :    goto 92
+105 :    param .LC3
+106 :    t41 = call printStr, 1
+107 :    param .LC4
+108 :    t42 = call printStr, 1
+109 :    t43 = &err
+110 :    param t43
+111 :    t44 = call readInt, 1
+112 :    my_key = t44
+113 :    t45 = 0
+114 :    t46 = 9
+115 :    start = t45
+116 :    end = t46
+117 :    param arr_1
+118 :    param my_key
+119 :    param start
+120 :    param end
+121 :    t48 = call binarySearch, 4
+122 :    key_idx = t48
+123 :    t49 = 1
+124 :    t50 = -t49
+125 :    t51 = 1
+126 :    if key_idx == t50 goto 130
+127 :    t51 = 0
+128 :    goto 133
+129 :    goto 138
+130 :    param .LC5
+131 :    t52 = call printStr, 1
+132 :    goto 138
+133 :    param .LC6
+134 :    t53 = call printStr, 1
+135 :    param key_idx
+136 :    t54 = call printInt, 1
+137 :    goto 138
+138 :    param .LC7
+139 :    t55 = call printStr, 1
+140 :    param .LC8
+141 :    t56 = call printStr, 1
+142 :    t57 = 0
+143 :    return t57
+144 : function main ends
+
+========================================================================================================================
+SYMBOL TABLE: SymTbl.global                                     
+========================================================================================================================
+NAME                     TYPE                     INITIAL VALUE            SIZE           OFFSET         NESTED TABLE
+========================================================================================================================
+t0                       int                      0                   4              0              NULL
+glbl_idx                 int                      0                   4              4              NULL
+t1                       int                      100                 4              8              NULL
+MAX_ARR_SIZE             float                    100.000000          8              12             NULL
+printStr                 function                 -                   0              20             SymTbl.global.printStr
+printInt                 function                 -                   0              20             SymTbl.global.printInt
+readInt                  function                 -                   0              20             SymTbl.global.readInt
+binarySearch             function                 -                   0              20             SymTbl.global.binarySearch
+main                     function                 -                   0              20             SymTbl.global.main
+========================================================================================================================
+
+========================================================================================================================
+SYMBOL TABLE: SymTbl.global.printStr                            
+========================================================================================================================
+NAME                     TYPE                     INITIAL VALUE            SIZE           OFFSET         NESTED TABLE
+========================================================================================================================
+ch                       char                     -                   1              0              NULL
+RETVAL                   int                      -                   4              1              NULL
+========================================================================================================================
+
+========================================================================================================================
+SYMBOL TABLE: SymTbl.global.printInt                            
+========================================================================================================================
+NAME                     TYPE                     INITIAL VALUE            SIZE           OFFSET         NESTED TABLE
+========================================================================================================================
+n                        int                      -                   4              0              NULL
+RETVAL                   int                      -                   4              4              NULL
+========================================================================================================================
+
+========================================================================================================================
+SYMBOL TABLE: SymTbl.global.readInt                             
+========================================================================================================================
+NAME                     TYPE                     INITIAL VALUE            SIZE           OFFSET         NESTED TABLE
+========================================================================================================================
+eP                       int                      -                   4              0              NULL
+RETVAL                   int                      -                   4              4              NULL
+========================================================================================================================
+
+========================================================================================================================
+SYMBOL TABLE: SymTbl.global.binarySearch                        
+========================================================================================================================
+NAME                     TYPE                     INITIAL VALUE            SIZE           OFFSET         NESTED TABLE
+========================================================================================================================
+int_arr                  int[]                    -                   0              0              NULL
+key                      int                      -                   4              0              NULL
+left                     int                      -                   4              4              NULL
+right                    int                      -                   4              8              NULL
+RETVAL                   int                      -                   4              12             NULL
+t2                       int                      -                   4              16             NULL
+t3                       int                      -                   4              20             NULL
+t4                       int                      2                   4              24             NULL
+t5                       int                      -                   4              28             NULL
+mid                      int                      -                   4              32             NULL
+t6                       int                      -                   4              36             NULL
+t7                       int                      -                   4              40             NULL
+t8                       int                      -                   4              44             NULL
+t9                       int                      -                   4              48             NULL
+t10                      int                      -                   4              52             NULL
+t11                      int                      -                   4              56             NULL
+t12                      int                      -                   4              60             NULL
+t13                      int                      -                   4              64             NULL
+t14                      int                      1                   4              68             NULL
+t15                      int                      -                   4              72             NULL
+t16                      int                      1                   4              76             NULL
+t17                      int                      -                   4              80             NULL
+t18                      int                      1                   4              84             NULL
+t19                      int                      -                   4              88             NULL
+========================================================================================================================
+
+========================================================================================================================
+SYMBOL TABLE: SymTbl.global.main                                
+========================================================================================================================
+NAME                     TYPE                     INITIAL VALUE            SIZE           OFFSET         NESTED TABLE
+========================================================================================================================
+RETVAL                   int                      -                   4              0              NULL
+glbl_idx                 int                      -                   4              4              NULL
+t20                      int                      2                   4              8              NULL
+t21                      int                      15                  4              12             NULL
+arr_1                    int[15]                  -                   60             16             NULL
+i                        int                      -                   4              76             NULL
+n                        int                      -                   4              80             NULL
+err                      int                      -                   4              84             NULL
+printStr                 int                      -                   4              88             NULL
+.LC0                     int                      -                   4              92             NULL
+t22                      int                      -                   4              96             NULL
+t23                      int                      0                   4              100            NULL
+t24                      int                      15                  4              104            NULL
+t25                      int                      -                   4              108            NULL
+t26                      int                      -                   4              112            NULL
+t27                      int                      -                   4              116            NULL
+t28                      int                      -                   4              120            NULL
+readInt                  int                      -                   4              124            NULL
+t29                      int                      -                   4              128            NULL
+t30                      int                      -                   4              132            NULL
+.LC1                     int                      -                   4              136            NULL
+t31                      int                      -                   4              140            NULL
+t32                      int                      0                   4              144            NULL
+t33                      int                      15                  4              148            NULL
+t34                      int                      -                   4              152            NULL
+t35                      int                      -                   4              156            NULL
+printInt                 int                      -                   4              160            NULL
+t36                      int                      -                   4              164            NULL
+t37                      int                      -                   4              168            NULL
+t38                      int                      -                   4              172            NULL
+t39                      int                      -                   4              176            NULL
+.LC2                     int                      -                   4              180            NULL
+t40                      int                      -                   4              184            NULL
+.LC3                     int                      -                   4              188            NULL
+t41                      int                      -                   4              192            NULL
+my_key                   int                      -                   4              196            NULL
+.LC4                     int                      -                   4              200            NULL
+t42                      int                      -                   4              204            NULL
+t43                      int                      -                   4              208            NULL
+t44                      int                      -                   4              212            NULL
+t45                      int                      0                   4              216            NULL
+t46                      int                      9                   4              220            NULL
+start                    int                      0                   4              224            NULL
+end                      int                      9                   4              228            NULL
+binarySearch             int                      -                   4              232            NULL
+t47                      int                      -                   4              236            NULL
+t48                      int                      -                   4              240            NULL
+key_idx                  int                      -                   4              244            NULL
+t49                      int                      1                   4              248            NULL
+t50                      int                      -                   4              252            NULL
+t51                      int                      -                   4              256            NULL
+.LC5                     int                      -                   4              260            NULL
+t52                      int                      -                   4              264            NULL
+.LC6                     int                      -                   4              268            NULL
+t53                      int                      -                   4              272            NULL
+t54                      int                      -                   4              276            NULL
+.LC7                     int                      -                   4              280            NULL
+t55                      int                      -                   4              284            NULL
+.LC8                     int                      -                   4              288            NULL
+t56                      int                      -                   4              292            NULL
+t57                      int                      0                   4              296            NULL
+========================================================================================================================
+

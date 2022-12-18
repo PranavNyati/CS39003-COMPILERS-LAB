@@ -1,0 +1,149 @@
+******************************
+GENERATED THREE-ADDRESS CODE :-
+******************************
+0   :    t0 = 37
+1   :    x = t0
+2   :    t1 = 49
+3   :    y = t1
+4   :    t2 = 3.14
+5   :    pi = t2
+6   :    t3 = 'a'
+7   :    c1 = t3
+8   :    t4 = 'b'
+9   :    c2 = t4
+
+10  : main: 
+11  :    t0 = 10
+12  :    t1 = 20
+13  :    t2 = 50
+14  :    t3 = 55
+15  :    t4 = -t3
+16  :    i = t4
+17  :    t5 = 'c'
+18  :    ch = t5
+19  :    t6 = 'd'
+20  :    d = t6
+21  :    t7 = x + y
+22  :    a1 = t7
+23  :    t9 = x
+24  :    x = x + 1
+25  :    t10 = x - y
+26  :    a2 = t10
+27  :    y = y - 1
+28  :    t12 = x * y
+29  :    a3 = t12
+30  :    t14 = x / y
+31  :    a4 = t14
+32  :    t16 = x % y
+33  :    a5 = t16
+34  :    t18 = x & y
+35  :    a6 = t18
+36  :    t20 = x | y
+37  :    a7 = t20
+38  :    a2 = x
+39  :    a3 = y
+40  :    a1 = a1 + 1
+41  :    a4 = a1
+42  :    a5 = a1
+43  :    a6 = a1
+44  :    a7 = a1
+45  :    t28 = 3
+46  :    t29 = i << t28
+47  :    j = t29
+48  :    t31 = 2
+49  :    t32 = i >> t31
+50  :    k = t32
+51  :    t34 = 0
+52  :    return t34
+
+
+****************************************
+GENERATED SYMBOL TABLES FOR EACH SCOPE:-
+****************************************
+
+
+------------------------------------------------------------------------------------------------------------------------
+SYMBOL TABLE : Global              
+PARENT TABLE : NULL                
+------------------------------------------------------------------------------------------------------------------------
+NAME                     TYPE                     INITIAL VALUE            SIZE           OFFSET         NESTED TABLE
+========================================================================================================================
+x                        int                      37                       4              0              NULL
+t0                       int                      37                       4              4              NULL
+y                        int                      49                       4              8              NULL
+t1                       int                      49                       4              12             NULL
+pi                       float                    3.14                     8              16             NULL
+t2                       float                    3.14                     8              24             NULL
+c1                       char                     'a'                      1              32             NULL
+t3                       float                    'a'                      8              33             NULL
+c2                       char                     'b'                      1              41             NULL
+t4                       float                    'b'                      8              42             NULL
+main                     int                      -                        4              50             main
+========================================================================================================================
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+SYMBOL TABLE : main                
+PARENT TABLE : Global              
+------------------------------------------------------------------------------------------------------------------------
+NAME                     TYPE                     INITIAL VALUE            SIZE           OFFSET         NESTED TABLE
+========================================================================================================================
+return                   int                      -                        4              0              NULL
+int_arr_1d               arr(10, int)             -                        40             4              NULL
+t0                       int                      10                       4              44             NULL
+float_arr_2d             arr(20, arr(50, float))  -                        8000           48             NULL
+t1                       int                      20                       4              8048           NULL
+t2                       int                      50                       4              8052           NULL
+a1                       int                      -                        4              8056           NULL
+a2                       int                      -                        4              8060           NULL
+a3                       int                      -                        4              8064           NULL
+a4                       int                      -                        4              8068           NULL
+a5                       int                      -                        4              8072           NULL
+a6                       int                      -                        4              8076           NULL
+a7                       int                      -                        4              8080           NULL
+i                        int                      -                        4              8084           NULL
+t3                       int                      55                       4              8088           NULL
+t4                       int                      -                        4              8092           NULL
+j                        int                      -                        4              8096           NULL
+k                        int                      -                        4              8100           NULL
+ch                       char                     'c'                      1              8104           NULL
+t5                       float                    'c'                      8              8105           NULL
+d                        char                     'd'                      1              8113           NULL
+t6                       float                    'd'                      8              8114           NULL
+ptr                      ptr(int)                 -                        4              8122           NULL
+ptr1                     ptr(ptr(ptr(int)))       -                        4              8126           NULL
+ptr2                     ptr(float)               -                        4              8130           NULL
+ptr3                     ptr(ptr(float))          -                        4              8134           NULL
+t7                       int                      -                        4              8138           NULL
+t8                       int                      -                        4              8142           NULL
+t9                       int                      -                        4              8146           NULL
+t10                      int                      -                        4              8150           NULL
+t11                      int                      -                        4              8154           NULL
+t12                      int                      -                        4              8158           NULL
+t13                      int                      -                        4              8162           NULL
+t14                      int                      -                        4              8166           NULL
+t15                      int                      -                        4              8170           NULL
+t16                      int                      -                        4              8174           NULL
+t17                      int                      -                        4              8178           NULL
+t18                      int                      -                        4              8182           NULL
+t19                      int                      -                        4              8186           NULL
+t20                      int                      -                        4              8190           NULL
+t21                      int                      -                        4              8194           NULL
+t22                      int                      -                        4              8198           NULL
+t23                      int                      -                        4              8202           NULL
+t24                      int                      -                        4              8206           NULL
+t25                      int                      -                        4              8210           NULL
+t26                      int                      -                        4              8214           NULL
+t27                      int                      -                        4              8218           NULL
+t28                      int                      3                        4              8222           NULL
+t29                      int                      -                        4              8226           NULL
+t30                      int                      -                        4              8230           NULL
+t31                      int                      2                        4              8234           NULL
+t32                      int                      -                        4              8238           NULL
+t33                      int                      -                        4              8242           NULL
+t34                      int                      0                        4              8246           NULL
+========================================================================================================================
+
+
+

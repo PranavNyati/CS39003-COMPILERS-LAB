@@ -1,0 +1,3695 @@
+storage-class-specifier ==> static
+type_qualifier ==> const
+type-specifier ==> double
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+declaration_specifiers-opt ==> declaration_specifiers
+declaration_specifiers ==> type_qualifier declaration_specifiers-opt
+declaration_specifiers-opt ==> declaration_specifiers
+declaration_specifiers ==> storage-class-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> float-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+external-declaration ==> declaration
+translation-unit ==> external-declaration
+storage-class-specifier ==> static
+type_qualifier ==> const
+type-specifier ==> int
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+declaration_specifiers-opt ==> declaration_specifiers
+declaration_specifiers ==> type_qualifier declaration_specifiers-opt
+declaration_specifiers-opt ==> declaration_specifiers
+declaration_specifiers ==> storage-class-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+external-declaration ==> declaration
+translation-unit ==> translation-unit external-declaration
+identifier-opt ==> identifier
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+constant-expression ==> conditional-expression
+enumerator ==> enumeration-constant = constant-expression
+enumerator-list ==> enumerator
+enumerator ==> enumeration-constant
+enumerator-list ==> enumerator-list , enumerator
+enumerator ==> enumeration-constant
+enumerator-list ==> enumerator-list , enumerator
+enumerator ==> enumeration-constant
+enumerator-list ==> enumerator-list , enumerator
+enumerator ==> enumeration-constant
+enumerator-list ==> enumerator-list , enumerator
+enumerator ==> enumeration-constant
+enumerator-list ==> enumerator-list , enumerator
+enumerator ==> enumeration-constant
+enumerator-list ==> enumerator-list , enumerator
+enumerator ==> enumeration-constant
+enumerator-list ==> enumerator-list , enumerator
+enumerator ==> enumeration-constant
+enumerator-list ==> enumerator-list , enumerator
+enumerator ==> enumeration-constant
+enumerator-list ==> enumerator-list , enumerator
+enumerator ==> enumeration-constant
+enumerator-list ==> enumerator-list , enumerator
+enumerator ==> enumeration-constant
+enumerator-list ==> enumerator-list , enumerator
+enum-specifier ==> enum identifier-opt { enumerator-list }
+type-specifier ==> enum-specifier
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+init-declarator-list-opt ==> epsilon
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+external-declaration ==> declaration
+translation-unit ==> translation-unit external-declaration
+storage-class-specifier ==> extern
+type-specifier ==> char
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+declaration_specifiers-opt ==> declaration_specifiers
+declaration_specifiers ==> storage-class-specifier declaration_specifiers-opt
+type-qualifier-list-opt ==> epsilon
+pointer ==> * type-qualifier-list-opt
+pointer-opt ==> pointer
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+init-declarator ==> declarator
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+external-declaration ==> declaration
+translation-unit ==> translation-unit external-declaration
+type-specifier ==> int
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+type_qualifier ==> restrict
+type-qualifier-list ==> type-qualifier
+type-qualifier-list-opt ==> type-qualifier-list
+pointer ==> * type-qualifier-list-opt
+pointer-opt ==> pointer
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+init-declarator ==> declarator
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+external-declaration ==> declaration
+translation-unit ==> translation-unit external-declaration
+type_qualifier ==> volatile
+type-specifier ==> int
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+declaration_specifiers-opt ==> declaration_specifiers
+declaration_specifiers ==> type_qualifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+init-declarator ==> declarator
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+external-declaration ==> declaration
+translation-unit ==> translation-unit external-declaration
+storage-class-specifier ==> auto
+type-specifier ==> float
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+declaration_specifiers-opt ==> declaration_specifiers
+declaration_specifiers ==> storage-class-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+init-declarator ==> declarator
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+external-declaration ==> declaration
+translation-unit ==> translation-unit external-declaration
+function_specifier ==> inline
+type-specifier ==> int
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+declaration_specifiers-opt ==> declaration_specifiers
+declaration_specifiers ==> function-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+type-specifier ==> int
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+parameter-declaration ==> declaration-specifiers declarator
+parameter-list ==> parameter-declaration
+parameter-type-list ==> parameter-list
+direct-declarator ==> direct-declarator ( parameter-type-list )
+declarator ==> pointer-opt direct_declarator
+declaration-list-opt ==> epsilon
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> multiplicative-expression * cast-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> multiplicative-expression * cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+jump-statement ==> return expression-opt ;
+statement ==> jump-statement
+block-item ==> statement
+block-item-list ==> block-item
+block-item-list-opt ==> block-item-list
+compound-statement ==> { block-item-list-opt }
+function-definition ==> declaration-specifiers declarator declaration-list-opt compound-statement
+external-declaration ==> function-definition
+translation-unit ==> translation-unit external-declaration
+type-specifier ==> void
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+identifier-list-opt ==> epsilon 
+direct-declarator ==> direct-declarator ( identifier-list-opt )
+declarator ==> pointer-opt direct_declarator
+declaration-list-opt ==> epsilon
+type-specifier ==> _Bool
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+block-item ==> declaration
+block-item-list ==> block-item
+type-specifier ==> double
+type-specifier ==> _Complex
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+declaration_specifiers-opt ==> declaration_specifiers
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+init-declarator ==> declarator
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+block-item ==> declaration
+block-item-list ==> block-item-list block-item
+storage-class-specifier ==> register
+type-specifier ==> char
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+declaration_specifiers-opt ==> declaration_specifiers
+declaration_specifiers ==> storage-class-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+init-declarator ==> declarator
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+block-item ==> declaration
+block-item-list ==> block-item-list block-item
+type-specifier ==> unsigned
+type-specifier ==> long
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+declaration_specifiers-opt ==> declaration_specifiers
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+block-item ==> declaration
+block-item-list ==> block-item-list block-item
+enum-specifier ==> enum identifier
+type-specifier ==> enum-specifier
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+init-declarator ==> declarator
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+block-item ==> declaration
+block-item-list ==> block-item-list block-item
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+assignment-operator ==> =
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+assignment-expression ==> unary-expression assignment-operator assignment-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> relational-expression <= shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+postfix-expression ==> postfix-expression ++
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+primary-expression ==> string-literal
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+argument-expression-list ==> assignment_expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+argument-expression-list ==> argument-expression-list , assignment_expression
+argument-expression-list-opt ==> argument-expression-list
+postfix-expression ==> postfix-expression ( argument-expression-list-opt )
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+iteration-statement ==> for ( expression-opt ; expression-opt ; expression-opt ) statement
+statement ==> iteration-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+type-specifier ==> int
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+block-item ==> declaration
+block-item-list ==> block-item-list block-item
+type-specifier ==> short
+type-specifier ==> signed
+type-specifier ==> int
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+declaration_specifiers-opt ==> declaration_specifiers
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+declaration_specifiers-opt ==> declaration_specifiers
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+unary-operator ==> -
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+unary-expression ==> unary-operator cast-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+block-item ==> declaration
+block-item-list ==> block-item-list block-item
+type-specifier ==> long
+type-specifier ==> long
+type-specifier ==> signed
+type-specifier ==> int
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+declaration_specifiers-opt ==> declaration_specifiers
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+declaration_specifiers-opt ==> declaration_specifiers
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+declaration_specifiers-opt ==> declaration_specifiers
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+block-item ==> declaration
+block-item-list ==> block-item-list block-item
+type-specifier ==> float
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> float-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> float-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator-list , init-declarator
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+unary-operator ==> -
+constant ==> float-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+unary-expression ==> unary-operator cast-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator-list , init-declarator
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> float-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator-list , init-declarator
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> float-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator-list , init-declarator
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> float-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator-list , init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+block-item ==> declaration
+block-item-list ==> block-item-list block-item
+type-specifier ==> double
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> float-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> float-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator-list , init-declarator
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> float-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator-list , init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+block-item ==> declaration
+block-item-list ==> block-item-list block-item
+type_qualifier ==> const
+type-specifier ==> double
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+declaration_specifiers-opt ==> declaration_specifiers
+declaration_specifiers ==> type_qualifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> float-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+block-item ==> declaration
+block-item-list ==> block-item-list block-item
+type-specifier ==> char
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> char-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> char-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator-list , init-declarator
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> char-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator-list , init-declarator
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> char-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator-list , init-declarator
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> char-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator-list , init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+block-item ==> declaration
+block-item-list ==> block-item-list block-item
+type_qualifier ==> const
+type-specifier ==> char
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+declaration_specifiers-opt ==> declaration_specifiers
+declaration_specifiers ==> type_qualifier declaration_specifiers-opt
+type-qualifier-list-opt ==> epsilon
+pointer ==> * type-qualifier-list-opt
+pointer-opt ==> pointer
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+primary-expression ==> string-literal
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+block-item ==> declaration
+block-item-list ==> block-item-list block-item
+type_qualifier ==> const
+type-specifier ==> char
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+declaration_specifiers-opt ==> declaration_specifiers
+declaration_specifiers ==> type_qualifier declaration_specifiers-opt
+type-qualifier-list-opt ==> epsilon
+pointer ==> * type-qualifier-list-opt
+pointer-opt ==> pointer
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+primary-expression ==> string-literal
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+block-item ==> declaration
+block-item-list ==> block-item-list block-item
+type-specifier ==> char
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+type-qualifier-list-opt ==> epsilon
+assignment-expression-opt ==> epsilon
+direct-declarator ==> direct-declarator [ type-qualifier-list-opt assignment-expression-opt ]
+declarator ==> pointer-opt direct_declarator
+primary-expression ==> string-literal
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+block-item ==> declaration
+block-item-list ==> block-item-list block-item
+type-specifier ==> int
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+type-qualifier-list-opt ==> epsilon
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+assignment-expression-opt ==> assignment-expression
+direct-declarator ==> direct-declarator [ type-qualifier-list-opt assignment-expression-opt ]
+declarator ==> pointer-opt direct_declarator
+designation-opt ==> epsilon
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+initializer-list ==> designation-opt initializer
+designation-opt ==> epsilon
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+initializer-list ==> initializer-list , designation-opt initializer
+designation-opt ==> epsilon
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+initializer-list ==> initializer-list , designation-opt initializer
+designation-opt ==> epsilon
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+initializer-list ==> initializer-list , designation-opt initializer
+designation-opt ==> epsilon
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+initializer-list ==> initializer-list , designation-opt initializer
+initializer ==> { initializer-list }
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+block-item ==> declaration
+block-item-list ==> block-item-list block-item
+type-specifier ==> int
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+postfix-expression ==> postfix-expression [ expression ]
+postfix-expression ==> postfix-expression ++
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+primary-expression ==> ( expression )
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+postfix-expression ==> postfix-expression [ expression ]
+unary-expression ==> postfix-expression
+unary-expression ==> ++ unary-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+primary-expression ==> ( expression )
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> additive-expression + multiplicative-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+postfix-expression ==> postfix-expression [ expression ]
+postfix-expression ==> postfix-expression --
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+primary-expression ==> ( expression )
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> additive-expression + multiplicative-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+postfix-expression ==> postfix-expression [ expression ]
+unary-expression ==> postfix-expression
+unary-expression ==> -- unary-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+primary-expression ==> ( expression )
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> additive-expression + multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+block-item ==> declaration
+block-item-list ==> block-item-list block-item
+type-specifier ==> int
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator-list , init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+block-item ==> declaration
+block-item-list ==> block-item-list block-item
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> relational-expression < shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+postfix-expression ==> postfix-expression [ expression ]
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+postfix-expression ==> postfix-expression [ expression ]
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> equality-expression == relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> logical-AND-expression && inclusive-OR-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+postfix-expression ==> postfix-expression [ expression ]
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+postfix-expression ==> postfix-expression [ expression ]
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> equality-expression != relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> logical-AND-expression && inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+primary-expression ==> ( expression )
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+postfix-expression ==> postfix-expression [ expression ]
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> relational-expression >= shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+primary-expression ==> ( expression )
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-OR-expression || logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+jump-statement ==> break ;
+statement ==> jump-statement
+jump-statement ==> continue ;
+statement ==> jump-statement
+selection-statement ==> if ( expression ) statement else statement
+statement ==> selection-statement
+block-item ==> statement
+block-item-list ==> block-item
+block-item-list-opt ==> block-item-list
+compound-statement ==> { block-item-list-opt }
+statement ==> compound-statement
+iteration-statement ==> while ( expression ) statement
+statement ==> iteration-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+assignment-operator ==> +=
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+postfix-expression ==> postfix-expression [ expression ]
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+postfix-expression ==> postfix-expression [ expression ]
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+postfix-expression ==> postfix-expression [ expression ]
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> multiplicative-expression * cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+primary-expression ==> ( expression )
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+postfix-expression ==> postfix-expression [ expression ]
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+postfix-expression ==> postfix-expression [ expression ]
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> multiplicative-expression % cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+primary-expression ==> ( expression )
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> multiplicative-expression / cast-expression
+additive-expression ==> additive-expression - multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+assignment-expression ==> unary-expression assignment-operator assignment-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+assignment-operator ==> *=
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+assignment-expression ==> unary-expression assignment-operator assignment-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+assignment-operator ==> /=
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+assignment-expression ==> unary-expression assignment-operator assignment-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+assignment-operator ==> %=
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+postfix-expression ==> postfix-expression [ expression ]
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+assignment-expression ==> unary-expression assignment-operator assignment-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+assignment-operator ==> =
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> relational-expression > shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+primary-expression ==> ( expression )
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+conditional-expression ==> logical-OR-expression ? expression : conditional-expression
+assignment-expression ==> conditional-expression
+assignment-expression ==> unary-expression assignment-operator assignment-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+type-specifier ==> int
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator-list , init-declarator
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+init-declarator ==> declarator
+init-declarator-list ==> init-declarator-list , init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+block-item ==> declaration
+block-item-list ==> block-item-list block-item
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+assignment-operator ==> &=
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+assignment-expression ==> unary-expression assignment-operator assignment-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+assignment-operator ==> =
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> inclusive-OR-expression | exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+assignment-expression ==> unary-expression assignment-operator assignment-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+assignment-operator ==> ^=
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+assignment-expression ==> unary-expression assignment-operator assignment-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+assignment-operator ==> <<=
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+assignment-expression ==> unary-expression assignment-operator assignment-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+assignment-operator ==> =
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> exclusive-OR-expression ^ AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+assignment-expression ==> unary-expression assignment-operator assignment-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+assignment-operator ==> =
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> shift-expression >> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+assignment-expression ==> unary-expression assignment-operator assignment-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+type-specifier ==> int
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+type-qualifier-list-opt ==> epsilon
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+assignment-expression-opt ==> assignment-expression
+direct-declarator ==> direct-declarator [ type-qualifier-list-opt assignment-expression-opt ]
+type-qualifier-list-opt ==> epsilon
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+assignment-expression-opt ==> assignment-expression
+direct-declarator ==> direct-declarator [ type-qualifier-list-opt assignment-expression-opt ]
+declarator ==> pointer-opt direct_declarator
+init-declarator ==> declarator
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+block-item ==> declaration
+block-item-list ==> block-item-list block-item
+type-specifier ==> int
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> relational-expression < shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+postfix-expression ==> postfix-expression ++
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+type-specifier ==> int
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> relational-expression < shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+postfix-expression ==> postfix-expression ++
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+postfix-expression ==> postfix-expression [ expression ]
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+postfix-expression ==> postfix-expression [ expression ]
+unary-expression ==> postfix-expression
+assignment-operator ==> =
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> multiplicative-expression * cast-expression
+additive-expression ==> multiplicative-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> additive-expression + multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+assignment-expression ==> unary-expression assignment-operator assignment-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+block-item ==> statement
+block-item-list ==> block-item
+block-item-list-opt ==> block-item-list
+compound-statement ==> { block-item-list-opt }
+statement ==> compound-statement
+iteration-statement ==> for ( declaration expression-opt ; expression-opt ) statement
+statement ==> iteration-statement
+block-item ==> statement
+block-item-list ==> block-item
+block-item-list-opt ==> block-item-list
+compound-statement ==> { block-item-list-opt }
+statement ==> compound-statement
+iteration-statement ==> for ( declaration expression-opt ; expression-opt ) statement
+statement ==> iteration-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+type-specifier ==> int
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+block-item ==> declaration
+block-item-list ==> block-item-list block-item
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> relational-expression >= shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+primary-expression ==> string-literal
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+argument-expression-list ==> assignment_expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+argument-expression-list ==> argument-expression-list , assignment_expression
+argument-expression-list-opt ==> argument-expression-list
+postfix-expression ==> postfix-expression ( argument-expression-list-opt )
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+block-item ==> statement
+block-item-list ==> block-item
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+assignment-operator ==> -=
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+assignment-expression ==> unary-expression assignment-operator assignment-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+block-item-list-opt ==> block-item-list
+compound-statement ==> { block-item-list-opt }
+statement ==> compound-statement
+iteration-statement ==> while ( expression ) statement
+statement ==> iteration-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+primary-expression ==> string-literal
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+argument-expression-list ==> assignment_expression
+argument-expression-list-opt ==> argument-expression-list
+postfix-expression ==> postfix-expression ( argument-expression-list-opt )
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+type-specifier ==> int
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+block-item ==> declaration
+block-item-list ==> block-item-list block-item
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+primary-expression ==> string-literal
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+argument-expression-list ==> assignment_expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+argument-expression-list ==> argument-expression-list , assignment_expression
+argument-expression-list-opt ==> argument-expression-list
+postfix-expression ==> postfix-expression ( argument-expression-list-opt )
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> multiplicative-expression % cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> equality-expression == relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+assignment-operator ==> /=
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+assignment-expression ==> unary-expression assignment-operator assignment-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+assignment-operator ==> =
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> multiplicative-expression * cast-expression
+additive-expression ==> multiplicative-expression
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> additive-expression + multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+assignment-expression ==> unary-expression assignment-operator assignment-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+selection-statement ==> if ( expression ) statement else statement
+statement ==> selection-statement
+block-item ==> statement
+block-item-list ==> block-item
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+primary-expression ==> string-literal
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+argument-expression-list ==> assignment_expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+argument-expression-list ==> argument-expression-list , assignment_expression
+argument-expression-list-opt ==> argument-expression-list
+postfix-expression ==> postfix-expression ( argument-expression-list-opt )
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+block-item-list-opt ==> block-item-list
+compound-statement ==> { block-item-list-opt }
+statement ==> compound-statement
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> relational-expression > shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+iteration-statement ==> do statement while ( expression ) ;
+statement ==> iteration-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+primary-expression ==> string-literal
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+argument-expression-list ==> assignment_expression
+argument-expression-list-opt ==> argument-expression-list
+postfix-expression ==> postfix-expression ( argument-expression-list-opt )
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+type-specifier ==> int
+declaration_specifiers-opt ==> epsilon
+declaration_specifiers ==> type-specifier declaration_specifiers-opt
+pointer-opt ==> epsilon
+direct-declarator ==> identifier
+declarator ==> pointer-opt direct_declarator
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+initializer ==> assignment-expression
+init-declarator ==> declarator = initializer
+init-declarator-list ==> init-declarator
+init-declarator-list-opt ==> init-declarator-list
+declaration ==> declaration_specifiers init-declarator-list-opt ;
+block-item ==> declaration
+block-item-list ==> block-item-list block-item
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+constant-expression ==> conditional-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+primary-expression ==> string-literal
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+argument-expression-list ==> assignment_expression
+argument-expression-list-opt ==> argument-expression-list
+postfix-expression ==> postfix-expression ( argument-expression-list-opt )
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+labeled-statement ==> case constant-expression : statement
+statement ==> labeled-statement
+block-item ==> statement
+block-item-list ==> block-item
+jump-statement ==> break ;
+statement ==> jump-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+constant-expression ==> conditional-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+primary-expression ==> string-literal
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+argument-expression-list ==> assignment_expression
+argument-expression-list-opt ==> argument-expression-list
+postfix-expression ==> postfix-expression ( argument-expression-list-opt )
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+labeled-statement ==> case constant-expression : statement
+statement ==> labeled-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+jump-statement ==> break ;
+statement ==> jump-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+constant-expression ==> conditional-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+primary-expression ==> string-literal
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+argument-expression-list ==> assignment_expression
+argument-expression-list-opt ==> argument-expression-list
+postfix-expression ==> postfix-expression ( argument-expression-list-opt )
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+labeled-statement ==> case constant-expression : statement
+statement ==> labeled-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+jump-statement ==> break ;
+statement ==> jump-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+constant-expression ==> conditional-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+primary-expression ==> string-literal
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+argument-expression-list ==> assignment_expression
+argument-expression-list-opt ==> argument-expression-list
+postfix-expression ==> postfix-expression ( argument-expression-list-opt )
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+labeled-statement ==> case constant-expression : statement
+statement ==> labeled-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+jump-statement ==> break ;
+statement ==> jump-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+constant-expression ==> conditional-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+primary-expression ==> string-literal
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+argument-expression-list ==> assignment_expression
+argument-expression-list-opt ==> argument-expression-list
+postfix-expression ==> postfix-expression ( argument-expression-list-opt )
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+labeled-statement ==> case constant-expression : statement
+statement ==> labeled-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+jump-statement ==> break ;
+statement ==> jump-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+constant-expression ==> conditional-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+primary-expression ==> string-literal
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+argument-expression-list ==> assignment_expression
+argument-expression-list-opt ==> argument-expression-list
+postfix-expression ==> postfix-expression ( argument-expression-list-opt )
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+labeled-statement ==> case constant-expression : statement
+statement ==> labeled-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+jump-statement ==> break ;
+statement ==> jump-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+constant-expression ==> conditional-expression
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+primary-expression ==> string-literal
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+argument-expression-list ==> assignment_expression
+argument-expression-list-opt ==> argument-expression-list
+postfix-expression ==> postfix-expression ( argument-expression-list-opt )
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+labeled-statement ==> case constant-expression : statement
+statement ==> labeled-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+jump-statement ==> break ;
+statement ==> jump-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+primary-expression ==> identifier
+postfix-expression ==> primary-expression
+primary-expression ==> string-literal
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+argument-expression-list ==> assignment_expression
+argument-expression-list-opt ==> argument-expression-list
+postfix-expression ==> postfix-expression ( argument-expression-list-opt )
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+expression-statement ==> expression-opt ;
+statement ==> expression-statement
+labeled-statement ==> default : statement
+statement ==> labeled-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+jump-statement ==> break ;
+statement ==> jump-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+block-item-list-opt ==> block-item-list
+compound-statement ==> { block-item-list-opt }
+statement ==> compound-statement
+selection-statement ==> switch ( expression ) statement
+statement ==> selection-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+constant ==> int-const
+primary-expression ==> constant
+postfix-expression ==> primary-expression
+unary-expression ==> postfix-expression
+cast-expression ==> unary-expression
+multiplicative-expression ==> cast-expression
+additive-expression ==> multiplicative-expression
+shift-expression ==> additive-expression
+relational-expression ==> shift-expression
+equality-expression ==> relational-expression
+AND-expression ==> equality-expression
+exclusive-OR-expression ==> AND-expression
+inclusive-OR-expression ==> exclusive-OR-expression
+logical-AND-expression ==> inclusive-OR-expression
+logical-OR-expression ==> logical-AND-expression
+conditional-expression ==> logical-OR-expression
+assignment-expression ==> conditional-expression
+expression ==> assignment-expression
+expression-opt ==> expression
+jump-statement ==> return expression-opt ;
+statement ==> jump-statement
+block-item ==> statement
+block-item-list ==> block-item-list block-item
+block-item-list-opt ==> block-item-list
+compound-statement ==> { block-item-list-opt }
+function-definition ==> declaration-specifiers declarator declaration-list-opt compound-statement
+external-declaration ==> function-definition
+translation-unit ==> translation-unit external-declaration

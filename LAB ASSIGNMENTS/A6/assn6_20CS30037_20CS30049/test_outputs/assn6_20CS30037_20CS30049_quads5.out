@@ -1,0 +1,240 @@
+------------------------------------------------------------------------------------------------------------------------
+THREE ADDRESS CODE (TAC):
+------------------------------------------------------------------------------------------------------------------------
+
+0   : printStr: 
+1   : function printStr ends
+
+2   : printInt: 
+3   : function printInt ends
+
+4   : readInt: 
+5   : function readInt ends
+
+6   : fibonacci_recur: 
+7   : function fibonacci_recur ends
+
+8   : main: 
+9   :    param .LC0
+10  :    t0 = call printStr, 1
+11  :    t1 = &err
+12  :    param t1
+13  :    t2 = call readInt, 1
+14  :    n = t2
+15  :    t3 = 50
+16  :    t4 = 0
+17  :    i = t4
+18  :    t5 = 1
+19  :    if i < n goto 26
+20  :    t5 = 0
+21  :    goto 34
+22  :    goto 34
+23  :    t6 = i
+24  :    i = i + 1
+25  :    goto 18
+26  :    t7 = 0
+27  :    t8 = i
+28  :    t8 = t8 * 4
+29  :    t7 = t8
+30  :    param i
+31  :    t9 = call fibonacci_recur, 1
+32  :    fib_arr[t7] = t9
+33  :    goto 23
+34  :    param .LC1
+35  :    t10 = call printStr, 1
+36  :    param .LC2
+37  :    t11 = call printStr, 1
+38  :    param n
+39  :    t12 = call printInt, 1
+40  :    param .LC3
+41  :    t13 = call printStr, 1
+42  :    t14 = 0
+43  :    i = t14
+44  :    t15 = 1
+45  :    t16 = n - t15
+46  :    t17 = 1
+47  :    if i < t16 goto 54
+48  :    t17 = 0
+49  :    goto 64
+50  :    goto 64
+51  :    t18 = i
+52  :    i = i + 1
+53  :    goto 44
+54  :    t19 = 0
+55  :    t20 = i
+56  :    t20 = t20 * 4
+57  :    t19 = t20
+58  :    t21 = fib_arr[t19]
+59  :    param t21
+60  :    t22 = call printInt, 1
+61  :    param .LC4
+62  :    t23 = call printStr, 1
+63  :    goto 51
+64  :    t24 = 1
+65  :    t25 = n - t24
+66  :    t26 = 0
+67  :    t27 = t25
+68  :    t27 = t27 * 4
+69  :    t26 = t27
+70  :    t28 = fib_arr[t26]
+71  :    param t28
+72  :    t29 = call printInt, 1
+73  :    param .LC5
+74  :    t30 = call printStr, 1
+75  :    param .LC6
+76  :    t31 = call printStr, 1
+77  :    t32 = 0
+78  :    return t32
+79  : function main ends
+
+80  : fibonacci_recur: 
+81  :    t33 = 0
+82  :    t34 = 1
+83  :    if n == t33 goto 87
+84  :    t34 = 0
+85  :    goto 90
+86  :    goto 111
+87  :    t35 = 0
+88  :    return t35
+89  :    goto 111
+90  :    t36 = 1
+91  :    t37 = 1
+92  :    if n == t36 goto 96
+93  :    t37 = 0
+94  :    goto 99
+95  :    goto 110
+96  :    t38 = 1
+97  :    return t38
+98  :    goto 111
+99  :    t39 = 1
+100 :    t40 = n - t39
+101 :    param t40
+102 :    t41 = call fibonacci_recur, 1
+103 :    t42 = 2
+104 :    t43 = n - t42
+105 :    param t43
+106 :    t44 = call fibonacci_recur, 1
+107 :    t45 = t41 + t44
+108 :    return t45
+109 :    goto 111
+110 :    goto 111
+111 : function fibonacci_recur ends
+
+========================================================================================================================
+SYMBOL TABLE: SymTbl.global                                     
+========================================================================================================================
+NAME                     TYPE                     INITIAL VALUE            SIZE           OFFSET         NESTED TABLE
+========================================================================================================================
+printStr                 function                 -                   0              0              SymTbl.global.printStr
+printInt                 function                 -                   0              0              SymTbl.global.printInt
+readInt                  function                 -                   0              0              SymTbl.global.readInt
+fibonacci_recur          function                 -                   0              0              SymTbl.global.fibonacci_recur
+main                     function                 -                   0              0              SymTbl.global.main
+========================================================================================================================
+
+========================================================================================================================
+SYMBOL TABLE: SymTbl.global.printStr                            
+========================================================================================================================
+NAME                     TYPE                     INITIAL VALUE            SIZE           OFFSET         NESTED TABLE
+========================================================================================================================
+ch                       char                     -                   1              0              NULL
+RETVAL                   int                      -                   4              1              NULL
+========================================================================================================================
+
+========================================================================================================================
+SYMBOL TABLE: SymTbl.global.printInt                            
+========================================================================================================================
+NAME                     TYPE                     INITIAL VALUE            SIZE           OFFSET         NESTED TABLE
+========================================================================================================================
+n                        int                      -                   4              0              NULL
+RETVAL                   int                      -                   4              4              NULL
+========================================================================================================================
+
+========================================================================================================================
+SYMBOL TABLE: SymTbl.global.readInt                             
+========================================================================================================================
+NAME                     TYPE                     INITIAL VALUE            SIZE           OFFSET         NESTED TABLE
+========================================================================================================================
+eP                       int                      -                   4              0              NULL
+RETVAL                   int                      -                   4              4              NULL
+========================================================================================================================
+
+========================================================================================================================
+SYMBOL TABLE: SymTbl.global.fibonacci_recur                     
+========================================================================================================================
+NAME                     TYPE                     INITIAL VALUE            SIZE           OFFSET         NESTED TABLE
+========================================================================================================================
+n                        int                      -                   4              0              NULL
+RETVAL                   int                      -                   4              4              NULL
+t33                      int                      0                   4              8              NULL
+t34                      int                      -                   4              12             NULL
+t35                      int                      0                   4              16             NULL
+t36                      int                      1                   4              20             NULL
+t37                      int                      -                   4              24             NULL
+t38                      int                      1                   4              28             NULL
+fibonacci_recur          int                      -                   4              32             NULL
+t39                      int                      1                   4              36             NULL
+t40                      int                      -                   4              40             NULL
+t41                      int                      -                   4              44             NULL
+t42                      int                      2                   4              48             NULL
+t43                      int                      -                   4              52             NULL
+t44                      int                      -                   4              56             NULL
+t45                      int                      -                   4              60             NULL
+========================================================================================================================
+
+========================================================================================================================
+SYMBOL TABLE: SymTbl.global.main                                
+========================================================================================================================
+NAME                     TYPE                     INITIAL VALUE            SIZE           OFFSET         NESTED TABLE
+========================================================================================================================
+RETVAL                   int                      -                   4              0              NULL
+n                        int                      -                   4              4              NULL
+err                      int                      -                   4              8              NULL
+i                        int                      -                   4              12             NULL
+printStr                 int                      -                   4              16             NULL
+.LC0                     int                      -                   4              20             NULL
+t0                       int                      -                   4              24             NULL
+readInt                  int                      -                   4              28             NULL
+t1                       int                      -                   4              32             NULL
+t2                       int                      -                   4              36             NULL
+t3                       int                      50                  4              40             NULL
+fib_arr                  int[50]                  -                   200            44             NULL
+t4                       int                      0                   4              244            NULL
+t5                       int                      -                   4              248            NULL
+t6                       int                      -                   4              252            NULL
+t7                       int                      -                   4              256            NULL
+t8                       int                      -                   4              260            NULL
+fibonacci_recur          int                      -                   4              264            NULL
+t9                       int                      -                   4              268            NULL
+.LC1                     int                      -                   4              272            NULL
+t10                      int                      -                   4              276            NULL
+.LC2                     int                      -                   4              280            NULL
+t11                      int                      -                   4              284            NULL
+printInt                 int                      -                   4              288            NULL
+t12                      int                      -                   4              292            NULL
+.LC3                     int                      -                   4              296            NULL
+t13                      int                      -                   4              300            NULL
+t14                      int                      0                   4              304            NULL
+t15                      int                      1                   4              308            NULL
+t16                      int                      -                   4              312            NULL
+t17                      int                      -                   4              316            NULL
+t18                      int                      -                   4              320            NULL
+t19                      int                      -                   4              324            NULL
+t20                      int                      -                   4              328            NULL
+t21                      int                      -                   4              332            NULL
+t22                      int                      -                   4              336            NULL
+.LC4                     int                      -                   4              340            NULL
+t23                      int                      -                   4              344            NULL
+t24                      int                      1                   4              348            NULL
+t25                      int                      -                   4              352            NULL
+t26                      int                      -                   4              356            NULL
+t27                      int                      -                   4              360            NULL
+t28                      int                      -                   4              364            NULL
+t29                      int                      -                   4              368            NULL
+.LC5                     int                      -                   4              372            NULL
+t30                      int                      -                   4              376            NULL
+.LC6                     int                      -                   4              380            NULL
+t31                      int                      -                   4              384            NULL
+t32                      int                      0                   4              388            NULL
+========================================================================================================================
+
